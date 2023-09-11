@@ -4,7 +4,7 @@ A Task for Image & Video Processing Course, comparing spatial convolution, lowpa
 
 ## Feature
 
-1. Measure time taken for each method to change brightness and contrast
+1. Measure time taken for each method to perform spatial convolution, lowpass spatial filter, lowpass with gaussian kernel, 1D highpass spatial filter, and 2D highpass spatial filter
 2. Compare the result of each method
 3. Compare the time taken for each method
 
