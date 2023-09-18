@@ -18,17 +18,33 @@ numpy
 
 ## Program usage
 
-<!-- [br-with-opencv.py](https://github.com/wannn-one/02-spatial-filter/blob/main/br-with-opencv.py) file : brightness change with OpenCV using cv2.addWeighted
+`hpf-without-opencv.py` is a program to perform 1D highpass spatial filter without using OpenCV
 
-[br-without-opencv.py](https://github.com/wannn-one/02-spatial-filter/blob/main/br-without-opencv.py) file : brightness change without OpenCV, perform manual thresholding with python built-in function
+`hpf-with-opencv.py` is a program to perform 2D highpass spatial filter using OpenCV
 
-[co-with-opencv.py](https://github.com/wannn-one/02-spatial-filter/blob/main/co-with-opencv.py) file : contrast change with OpenCV using cv2.convertScaleAbs
+`lpf-without-opencv.py` is a program to perform lowpass spatial filter without using OpenCV
 
-[co-without-opencv.py](https://github.com/wannn-one/02-spatial-filter/blob/main/co-without-opencv.py) file : contrast change without OpenCV, perform manual iteration and clipping the edge with np.clip()  -->
+`lpf-with-opencv.py` is a program to perform lowpass spatial filter using OpenCV
+
+`conv-2d-with-opencv.py` is a program to perform 2d convolution using OpenCV
+
+`conv-2d-without-opencv.py` is a program to perform 2d convolution without using OpenCV
+
+`lpf-gaussian-with-opencv.py` is a program to perform lowpass spatial filter with gaussian kernel using OpenCV
+
+`lpf-gaussian-without-opencv.py` is a program to perform lowpass spatial filter with gaussian kernel without using OpenCV
+
+`combine.py` is a program to get every hpf-edge images (laplacial, sobel, canny) and combine them into one image
 
 Coming soon
 
 ## How to use?
+
+Install all the prequisites.
+
+```
+pip install -r requirements.txt
+```
 
 Simply type in your terminal:
 

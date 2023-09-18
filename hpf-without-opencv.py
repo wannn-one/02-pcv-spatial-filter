@@ -3,8 +3,8 @@ import numpy as np
 import time
 import os
 
-if not os.path.exists('canny-edge'):
-    os.makedirs('canny-edge')
+if not os.path.exists('hpf-edge'):
+    os.makedirs('hpf-edge')
 
 def Convolosi(f,w):
     f  =np.float64(f)/255 
@@ -42,8 +42,8 @@ print("%.4f seconds" % time_taken)
 cv2.imshow('Citra Asli', f)
 cv2.imshow('Highpass Filter', g)
 
-cv2.imwrite('canny-edge/canny_edge_without_opencv.jpg', g)
-with open('canny-edge/time_taken_canny_edge_without_opencv.txt', 'a') as f:
+cv2.imwrite('hpf-edge/canny_edge_without_opencv.jpg', g)
+with open('hpf-edge/time_taken_canny_edge_without_opencv.txt', 'a') as f:
     f.write(str(time_taken) + '\n')
 
 cv2.waitKey(0)

@@ -18,8 +18,8 @@ def use_sobel(img):
 def use_canny(img):
     return cv2.Canny(img, 50, 100)
 
-if not os.path.exists('canny-edge'):
-    os.makedirs('canny-edge')
+if not os.path.exists('hpf-edge'):
+    os.makedirs('hpf-edge')
 
 img = cv2.imread('images/a.jpg', 0)
 
@@ -49,17 +49,17 @@ cv2.imshow('Canny Edge Detection', canny)
 cv2.imshow('Laplacian Edge Detection', laplacian)
 cv2.imshow('Sobel Edge Detection', sobel)
 
-cv2.imwrite('canny-edge/canny_with_opencv.jpg', canny)
-cv2.imwrite('canny-edge/laplacian_with_opencv.jpg', laplacian)
-cv2.imwrite('canny-edge/sobel_with_opencv.jpg', sobel)
+cv2.imwrite('hpf-edge/canny_with_opencv.jpg', canny)
+cv2.imwrite('hpf-edge/laplacian_with_opencv.jpg', laplacian)
+cv2.imwrite('hpf-edge/sobel_with_opencv.jpg', sobel)
 
-with open('canny-edge/time_taken_canny_with_opencv.txt', 'a') as f:
+with open('hpf-edge/time_taken_canny_with_opencv.txt', 'a') as f:
     f.write(str(time_taken_canny) + '\n')
 
-with open('canny-edge/time_taken_laplacian_with_opencv.txt', 'a') as f:
+with open('hpf-edge/time_taken_laplacian_with_opencv.txt', 'a') as f:
     f.write(str(time_taken_laplacian) + '\n')
 
-with open('canny-edge/time_taken_sobel_with_opencv.txt', 'a') as f:
+with open('hpf-edge/time_taken_sobel_with_opencv.txt', 'a') as f:
     f.write(str(time_taken_sobel) + '\n')
 
 cv2.waitKey(0)
